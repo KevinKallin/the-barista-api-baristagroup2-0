@@ -1,14 +1,14 @@
-name: Kevin och Mikael
+name: Vår fösta workflow
 on: [push]
-jobs: 
-  build: 
-    name: Build this
+jobs:
+  build:
+    name: Build job
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-dotnet@v1
-     with: 
-       dotnet-version: 5.0.x
-    - name: Bygg det här
-    run: dotnet build
+      with:
+        dotnet-version: 5.0.x
+    - name: Bygg koden
+      run: dotnet build
