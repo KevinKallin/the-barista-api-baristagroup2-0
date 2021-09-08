@@ -1,5 +1,5 @@
 name: Kevin och Mikael
-on: push
+on: [push]
 jobs: 
   build: 
     name: Build this
